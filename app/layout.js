@@ -8,6 +8,14 @@ import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./stores/authStore";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Montserrat } from "next/font/google"; // <-- if you plan to use Google Fonts
+
+// Configure the font
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat", // This links to your CSS
+});
 
 export default function RootLayout({ children }) {
   useInitTheme();
@@ -24,7 +32,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="transition-colors duration-300 ">
+      <body
+        className={`${montserrat.className} transition-colors duration-300`}
+      >
         {/* ✅ Show header + footer only if no user */}
         {/* {!current && <Header />} */}
         <main className="min-h-screen">{children}</main>
