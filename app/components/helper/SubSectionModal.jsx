@@ -471,7 +471,18 @@ export default function SubSectionModal({
                           {i.description ||
                             i.status ||
                             (i.treatmentDate
-                              ? new Date(i.treatmentDate).toLocaleString()
+                              ? new Date(i.treatmentDate).toLocaleTimeString(
+                                  "en-PH",
+                                  {
+                                    timeZone: "Asia/Manila",
+                                    month: "short",
+                                    day: "numeric",
+                                    year: "numeric",
+                                    hour: "numeric",
+                                    minute: "2-digit",
+                                    hour12: true,
+                                  }
+                                )
                               : "")}
                         </pre>
                       </div>
@@ -547,10 +558,25 @@ export default function SubSectionModal({
                     />
                     <input
                       type="datetime-local"
-                      value={form.treatmentDate || ""}
-                      onChange={(e) =>
-                        setForm({ ...form, treatmentDate: e.target.value })
+                      value={
+                        form.treatmentDate
+                          ? form.treatmentDate.slice(0, 16)
+                          : ""
                       }
+                      onChange={(e) => {
+                        const val = e.target.value; // e.g., "2026-01-03T03:12"
+                        if (!val) {
+                          setForm({ ...form, treatmentDate: "" });
+                          return;
+                        }
+
+                        /* PH OFFSET INJECTION:
+          We append ':00.000+08:00' to the string. 
+          This ensures Appwrite saves it as a specific point in Philippine Time.
+        */
+                        const phISO = `${val}:00.000+08:00`;
+                        setForm({ ...form, treatmentDate: phISO });
+                      }}
                       className="input w-full bg-[#FFF8EA] border border-[#DCD1B4]"
                     />
                   </>
