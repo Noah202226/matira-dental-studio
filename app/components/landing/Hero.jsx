@@ -36,15 +36,15 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-50 to-white overflow-hidden">
       {/* Floating Top Bar */}
       <div className="w-full h-full bg-[var(--theme-color)] text-white py-3 px-6 text-center text-sm md:text-base font-medium flex flex-wrap justify-center gap-x-4">
-        <span>🦷 General Dentistry</span>
+        <span>General Dentistry</span>
         <span>•</span>
-        <span>Cosmetic Dentistry</span>
+        <span>Esthetic Dentistry</span>
         <span>•</span>
         <span>Orthodontics</span>
         <span>•</span>
         <span>Oral Surgery</span>
-        <span>•</span>
-        <span>Dental Braces</span>
+        {/* <span>•</span>
+        <span>Dental Braces</span> */}
         <span>•</span>
         <span>Prosthodontics</span>
       </div>
@@ -83,14 +83,14 @@ export default function Hero() {
           </motion.h1>
 
           {/* Subtext */}
-          <motion.p
+          {/* <motion.p
             className="mt-4 text-lg md:text-xl text-gray-600 max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             “Where smile speaks louder than words”
-          </motion.p>
+          </motion.p> */}
 
           {/* Clinic Info */}
           <motion.div
@@ -100,9 +100,9 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.6 }}
           >
             <p className="font-semibold text-gray-700">
-              📍 Kalibo, Philippines
+              📍Toting Reyes St., Kalibo, Aklan
             </p>
-            <p>🕘 Monday-Sunday 8am-4pm</p>
+            <p>🕘 Mondays to Saturdays 8am to 5pm</p>
             <p>📞 +63 910 126 4458</p>
             <p>✉️ matiradentalstudio@gmail.com</p>
           </motion.div>
