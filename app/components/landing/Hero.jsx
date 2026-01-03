@@ -47,6 +47,8 @@ export default function Hero() {
         <span>Dental Braces</span> */}
         <span>•</span>
         <span>Prosthodontics</span>
+        <span>•</span>
+        <span>Laser Dentistry</span>
       </div>
 
       {/* Main Content */}
@@ -71,12 +73,12 @@ export default function Hero() {
 
           {/* Clinic Heading */}
           <motion.h1
-            className="text-5xl md:text-6xl font-extrabold text-gray-800"
+            className="text-5xl md:text-5xl font-extrabold text-gray-800"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Welcome to{" "}
+            Welcome to <br />
             <span className="text-[var(--theme-color)]">
               MATIRA DENTAL STUDIO
             </span>
@@ -100,10 +102,12 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.6 }}
           >
             <p className="font-semibold text-gray-700">
-              📍Toting Reyes St., Kalibo, Aklan
+              📍Unit 5 Gandionco, Toting Reyes St., Kalibo, Aklan
             </p>
             <p>🕘 Mondays to Saturdays 8am to 5pm</p>
             <p>📞 +63 910 126 4458</p>
+            <p>👨‍⚕️ Dr. Daisy Ciprano - Matira</p>
+            <p>👨‍⚕️ Dr. Ma. Dexely Matira - Delgado</p>
             <p>✉️ matiradentalstudio@gmail.com</p>
           </motion.div>
         </div>
