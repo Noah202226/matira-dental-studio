@@ -6,6 +6,7 @@ import AuthForm from "../AuthForm"; // <-- adjust the import path as needed
 import { useRouter } from "next/navigation";
 import { useAuthStore } from "@/app/stores/authStore";
 import { useEffect, useState } from "react";
+import { Facebook, Instagram } from "lucide-react";
 
 export default function Hero() {
   const { login, register, getCurrentUser, current, loading } = useAuthStore(
@@ -42,13 +43,14 @@ export default function Hero() {
         <span>•</span>
         <span>Orthodontics</span>
         <span>•</span>
-        <span>Oral Surgery</span>
+        <span>Laser Dentistry</span>
         {/* <span>•</span>
         <span>Dental Braces</span> */}
         <span>•</span>
         <span>Prosthodontics</span>
         <span>•</span>
-        <span>Laser Dentistry</span>
+
+        <span>Oral Surgery</span>
       </div>
 
       {/* Main Content */}
@@ -102,13 +104,21 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.6 }}
           >
             <p className="font-semibold text-gray-700">
-              📍Unit 5 Gandionco, Toting Reyes St., Kalibo, Aklan
+              📍Unit 5 Gandionco, Bldg. Toting Reyes St., Kalibo, Aklan
             </p>
             <p>🕘 Mondays to Saturdays 8am to 5pm</p>
-            <p>📞 +63 910 126 4458</p>
+            <p>📞 (036) 262 3207</p>
             <p>👨‍⚕️ Dr. Daisy Ciprano - Matira</p>
             <p>👨‍⚕️ Dr. Ma. Dexely Matira - Delgado</p>
             <p>✉️ matiradentalstudio@gmail.com</p>
+            <div className="flex items-center gap-2">
+              <Facebook size={14} className="text-blue-600" />
+              <p>Matira Dental Studio</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <Instagram size={14} className="text-pink-500" />
+              <p>@matiradentalstudio</p>
+            </div>
           </motion.div>
         </div>
 
