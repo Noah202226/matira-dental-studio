@@ -109,24 +109,22 @@ export default function Hero() {
             <p>🕘 Mondays to Saturdays 8am to 5pm</p>
             <p>✉️ matiradentalstudio@gmail.com</p>
             <br />
-            <div className="flex items-center gap-2 justify-between mt-4 w-[400px]">
-              <p>📞 (036) 262 3207</p>
-              <div className="flex items-center gap-2 justify-start">
-                <Facebook
-                  size={14}
-                  className="text-blue-600 items-center justify-self-start"
-                />
-                <p>Matira Dental Studio</p>
-              </div>
+
+            <div className="flex items-center gap-2">
+              <Instagram size={14} className="text-pink-500" />
+              <p>@matiradentalstudio</p>
             </div>
 
-            <div className="flex items-center gap-2 justify-between w-[400px]">
-              <p>📞 0910 126 4458</p>
-              <div className="flex items-center gap-2">
-                <Instagram size={14} className="text-pink-500" />
-                <p>@matiradentalstudio</p>
-              </div>
+            <div className="flex items-center gap-2 justify-start">
+              <Facebook
+                size={14}
+                className="text-blue-600 items-center justify-self-start"
+              />
+              <p>Matira Dental Studio</p>
             </div>
+
+            <p>📞 (036) 262 3207</p>
+            <p>📞 0910 126 4458</p>
 
             {/* <p>👨‍⚕️ Dr. Daisy Ciprano - Matira</p>
             <p>👨‍⚕️ Dr. Ma. Dexely Matira - Delgado</p> */}
