@@ -295,6 +295,12 @@ export default function SubSectionModal({
                     <span>Extracted</span>
                   </div>
 
+                  {/* Dentation */}
+                  <div className="flex items-center gap-1">
+                    <span className="w-3 h-3 rounded-full bg-red-500"></span>
+                    <span>Dentation</span>
+                  </div>
+
                   {/* Has Note (Blue Dot) */}
                   <div className="flex items-center gap-1">
                     <span className="w-3 h-3 flex items-center justify-center">
@@ -413,6 +419,20 @@ export default function SubSectionModal({
                       <span className="sm:hidden">🛠️</span>
                       {/* Icon for mobile (square/fill) */}
                       <span className="hidden sm:inline">Extracted</span>
+                      {/* Text for desktop */}
+                    </button>
+
+                    {/* 3. EXTRACTED BUTTON */}
+                    <button // 📌 MODERN STYLES
+                      className="btn btn-sm bg-red-900 text-white shadow-md rounded-lg hover:bg-gray-900 transition-all duration-150 flex items-center justify-center"
+                      onClick={() => updateToothStatus("dentition")}
+                    >
+                      {/* 📌 RESPONSIVE TEXT/ICON */}
+                      <span className="sm:hidden">🛠️</span>
+                      {/* Icon for mobile (square/fill) */}
+                      <span className="hidden sm:inline">
+                        Primary Dentition
+                      </span>
                       {/* Text for desktop */}
                     </button>
 

@@ -49,7 +49,6 @@ export default function Hero() {
         <span>•</span>
         <span>Prosthodontics</span>
         <span>•</span>
-
         <span>Oral Surgery</span>
       </div>
 
@@ -106,7 +105,7 @@ export default function Hero() {
             <p className="font-semibold text-gray-700">
               📍Unit 5 Gandionco, Bldg. Toting Reyes St., Kalibo, Aklan
             </p>
-            <p>🕘 Mondays to Saturdays 8am to 5pm</p>
+            <p>🕘 Mondays to Saturdays 8:00am to 5:00pm</p>
             <p>✉️ matiradentalstudio@gmail.com</p>
 
             <div className="flex items-center gap-2">

@@ -33,6 +33,9 @@ export default function ToothIcon({
   } else if (status === "extracted") {
     fillColor = "#3B3B3B"; // bg-yellow-200
     strokeColor = "#FFFFFF"; // border-yellow-500
+  } else if (status === "dentition") {
+    fillColor = "darkred"; // bg-yellow-200
+    strokeColor = "#FAB308"; // border-yellow-500
   } else {
     fillColor = "#F3F4F6"; // a light gray or white
     strokeColor = "#D1D5DB"; // border-gray-300
