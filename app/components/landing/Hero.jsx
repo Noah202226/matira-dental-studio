@@ -107,18 +107,29 @@ export default function Hero() {
               📍Unit 5 Gandionco, Bldg. Toting Reyes St., Kalibo, Aklan
             </p>
             <p>🕘 Mondays to Saturdays 8am to 5pm</p>
-            <p>📞 (036) 262 3207</p>
-            <p>👨‍⚕️ Dr. Daisy Ciprano - Matira</p>
-            <p>👨‍⚕️ Dr. Ma. Dexely Matira - Delgado</p>
             <p>✉️ matiradentalstudio@gmail.com</p>
-            <div className="flex items-center gap-2">
-              <Facebook size={14} className="text-blue-600" />
-              <p>Matira Dental Studio</p>
+            <br />
+            <div className="flex items-center gap-2 justify-between mt-4 w-[400px]">
+              <p>📞 (036) 262 3207</p>
+              <div className="flex items-center gap-2 justify-start">
+                <Facebook
+                  size={14}
+                  className="text-blue-600 items-center justify-self-start"
+                />
+                <p>Matira Dental Studio</p>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Instagram size={14} className="text-pink-500" />
-              <p>@matiradentalstudio</p>
+
+            <div className="flex items-center gap-2 justify-between w-[400px]">
+              <p>📞 0910 126 4458</p>
+              <div className="flex items-center gap-2">
+                <Instagram size={14} className="text-pink-500" />
+                <p>@matiradentalstudio</p>
+              </div>
             </div>
+
+            {/* <p>👨‍⚕️ Dr. Daisy Ciprano - Matira</p>
+            <p>👨‍⚕️ Dr. Ma. Dexely Matira - Delgado</p> */}
           </motion.div>
         </div>
 
