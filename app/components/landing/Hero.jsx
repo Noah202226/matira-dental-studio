@@ -50,6 +50,8 @@ export default function Hero() {
         <span>Prosthodontics</span>
         <span>•</span>
         <span>Oral Surgery</span>
+        <span>•</span>
+        <span>Endodontics</span>
       </div>
 
       {/* Main Content */}
