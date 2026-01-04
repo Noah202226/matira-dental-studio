@@ -108,7 +108,6 @@ export default function Hero() {
             </p>
             <p>🕘 Mondays to Saturdays 8am to 5pm</p>
             <p>✉️ matiradentalstudio@gmail.com</p>
-            <br />
 
             <div className="flex items-center gap-2">
               <Instagram size={14} className="text-pink-500" />
