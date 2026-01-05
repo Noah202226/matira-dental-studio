@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { FiLoader } from "react-icons/fi";
 
 export default function AddPatientModal({
@@ -29,7 +30,11 @@ export default function AddPatientModal({
 
   const handleSave = () => {
     // Retain original validation
-    if (!form.patientName || !form.contact) return;
+    if (!form.patientName) {
+      toast.error("Patient name is required.");
+      return;
+    }
+
     onSave(form);
     // Reset state after save
     setForm({
